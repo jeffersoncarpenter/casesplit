@@ -71,7 +71,7 @@ var textPost2 = {
 
 var imagePost = {
     image: {
-	src: './image.png',
+        src: './image.png',
         caption: 'Us At The Wedding',
     },
 };
