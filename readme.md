@@ -14,10 +14,6 @@ objects.  These are single-property objects, where the one property is
 chosen from some set.  Case splitting is how sum types are used.  To
 case split, you provide one function for each possible key.
 
-(If providing one function for each contingency like that sounds like
-a lot of work, just think about how many control flow statements you
-probably write every day)
-
 ## Install
 
 `npm install casesplit`
