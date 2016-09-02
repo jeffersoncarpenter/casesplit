@@ -95,18 +95,18 @@ var renderPost = caseSplit({
     },
     image: function (post) {
         return h('div', [
-	    h('img', {
-	        src: post.src,
+            h('img', {
+                src: post.src,
             }),
-	    h('p', post.caption),
+            h('p', post.caption),
         ]);
     },
     video: function (post) {
         return h('div', [
-	    h('iframe', {
-	        src: post.src,
+            h('iframe', {
+                src: post.src,
             }),
-	    h('p', post.caption),
+            h('p', post.caption),
         ]);
     },
 });
@@ -142,7 +142,7 @@ As a very simple example, here is the identity function:
 var identity = {
     lambda: {
         arg: 'a',
-	expression: {
+        expression: {
             identifier: 'a',
         },
     },
