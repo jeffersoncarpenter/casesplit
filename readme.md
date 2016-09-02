@@ -21,6 +21,9 @@ key.
 
 `bower install casesplit`
 
+Source code is at https://github.com/jeffersoncarpenter/casesplit.
+Comments and bugs should be submitted there as well.
+
 ## Example - Blog Posts
 
 Sum types can be helpful when you have multiple different kinds of
