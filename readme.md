@@ -143,7 +143,7 @@ var identity = {
     lambda: {
         arg: 'a',
 	expression: {
-	    identifier: 'a',
+            identifier: 'a',
         },
     },
 };
@@ -161,8 +161,8 @@ var evaluateTermWithContext = function (context) {
         },
         lambda: function (obj) {
             return {
-	        arg: obj.arg,
-		expression: evaluateTermWithContext(context)(obj.expression),
+                arg: obj.arg,
+                expression: evaluateTermWithContext(context)(obj.expression),
             };
         },
         app: function (obj) {
