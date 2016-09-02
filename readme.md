@@ -121,8 +121,6 @@ Informally, here is the type of lambda terms:
 
 ```
 
-var caseSplit = require('casesplit');
-
 var Term = OR({
     identifier: String,
     lambda: AND({
@@ -155,8 +153,6 @@ var identity = {
 And here is the evaluator.
 
 ```
-
-var caseSplit = require('casesplit');
 
 var evaluateTermWithContext = function (context) {
     return caseSplit({
