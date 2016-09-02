@@ -33,19 +33,19 @@ body, an image has a src and a caption, and a video has a src and a
 caption.  The only difference is that they must be rendered / embedded
 slightly differently.
 
-Informally, here's the type of blog posts.  `AND` and `OR` refer to
+Informally, here's the type of blog posts.  `And` and `Or` refer to
 product and sum types:
 
 ```
-var Post = OR({
-    text: AND({
+var Post = Or({
+    text: And({
         body: String,
     }),
-    image: AND({
+    image: And({
         src: String,
         caption: String,
     }),
-    video: AND({
+    video: And({
         src: String,
         caption: String,
     }),
@@ -123,13 +123,13 @@ Informally, here is the type of lambda terms:
 
 var caseSplit = require('casesplit');
 
-var Term = OR({
+var Term = Or({
     identifier: String,
-    lambda: AND({
+    lambda: And({
         arg: String,
         expression: Term,
     }),
-    apply: AND({
+    apply: And({
         func: Term,
         value: Term,
     }),
