@@ -87,7 +87,7 @@ var posts = [
 ```
 
 Now, the render method might look like this, providing a code path for
-each possible post type:
+each possible post type (using hyperscript notation for html):
 
 
 ```
