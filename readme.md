@@ -168,7 +168,7 @@ var evaluateTermWithContext = function (context) {
                 expression: evaluateTermWithContext(context)(obj.expression),
             };
         },
-        app: function (obj) {
+        apply: function (obj) {
             context = Object.clone(context); // clone the context
             context[obj.func.var] = obj.val;
             return evalTermWithContext(context)(obj.func.expr);
