@@ -12,7 +12,8 @@ properties to obtain a corresponding value.
 Tagged sum types can also be represented easily using Javascript
 objects.  These are single-property objects, where the one property is
 chosen from some set.  Case splitting is how sum types are used.  To
-case split, you provide one function for each possible key.
+case split on an object, you provide one function for each possible
+key.
 
 ## Install
 
