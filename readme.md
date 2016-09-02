@@ -1,4 +1,4 @@
-# caseSplit
+# Case Split
 
 Tagged sum and product types form a lovely calculus together, and can
 have very succinct representations as Javascript objects.
