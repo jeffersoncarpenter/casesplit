@@ -33,8 +33,8 @@ thing.
 As a slightly contrived example, consider a blog with several post
 types: text, image, and video.  We will say that a text post has a
 body, an image has a src and a caption, and a video has a src and a
-caption.  The only difference is that they must be rendered / embedded
-slightly differently.
+caption.  The only difference is that they must be rendered slightly
+differently.
 
 Informally, here's the type of blog posts.  `AND` and `OR` refer to
 product and sum types:
