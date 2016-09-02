@@ -22,7 +22,7 @@ key.
 `bower install casesplit`
 
 Source code is at https://github.com/jeffersoncarpenter/casesplit.
-Comments and bugs should be submitted there.
+Post comments and bugs there.
 
 ## Example - Blog Posts
 
