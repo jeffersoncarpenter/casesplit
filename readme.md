@@ -1,6 +1,6 @@
 # Case Split
 
-Tagged sum and product types form a lovely calculus together, and can
+Tagged sum and product types form a lovely algebra together, and can
 have succinct representations as Javascript objects.
 
 Plain old Javascript objects can often be seen as tagged products.
