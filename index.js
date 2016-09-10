@@ -3,7 +3,7 @@ var isFunction = function(obj) {
 };
 
 var doCaseSplit = function (cases, obj) {
-	for (var key in cases) {
+	for (var key in obj) {
 		if (cases.hasOwnProperty(key) && obj.hasOwnProperty(key)) {
 			if (!isFunction(cases[key])) {
 				return cases[key];

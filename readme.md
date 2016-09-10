@@ -63,20 +63,20 @@ type:
 var textPost1 = {
     text: {
         body: 'Hello World',
-    },
+    }
 };
 
 var textPost2 = {
     text: {
         body: 'Second Post',
-    },
+    }
 };
 
 var imagePost = {
     image: {
         src: './image.png',
         caption: 'Us At The Wedding',
-    },
+    }
 };
 
 var posts = [
@@ -91,6 +91,7 @@ each possible post type (using hyperscript notation for html):
 
 
 ```
+var caseSplit = require('casesplit');
 
 var renderPost = caseSplit({
     text: function (post) {
@@ -113,7 +114,6 @@ var renderPost = caseSplit({
         ]);
     },
 });
-
 ```
 
 ## Example - Lambda Term Evaluator
@@ -123,7 +123,6 @@ To show recursion, here is a lambda term evaluator.
 Informally, here is the type of lambda terms:
 
 ```
-
 var Term = OR({
     identifier: String,
     lambda: AND({
@@ -135,27 +134,25 @@ var Term = OR({
         value: Term,
     }),
 });
-
 ```
 
 As a very simple example, here is the identity function:
 
 ```
-
 var identity = {
     lambda: {
         arg: 'a',
         expression: {
-            identifier: 'a',
+            identifier: 'a'
         },
-    },
+    }
 };
-
 ```
 
 And here is the evaluator.
 
 ```
+var caseSplit = require('casesplit');
 
 var evaluateTermWithContext = function (context) {
     return caseSplit({
@@ -177,5 +174,4 @@ var evaluateTermWithContext = function (context) {
 };
 
 var evaluateTerm = evaluateTermWithContext({});
-
 ```
