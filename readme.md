@@ -1,7 +1,7 @@
 # Case Split
 
-Tagged sum and product types form a lovely algebra together, and can
-have representations as Javascript objects.
+Tagged sum and product types form a lovely algebra together, and have
+simple representations as Javascript objects.
 
 Plain old Javascript objects can often be seen as tagged products.
 Specific keys must be present on an object, and their values must
