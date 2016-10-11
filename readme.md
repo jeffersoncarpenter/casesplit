@@ -40,7 +40,7 @@ Informally, here's the type of blog posts.  `AND` and `OR` refer to
 product and sum types:
 
 ```
-var Post = OR({
+type Post = OR({
     text: AND({
         body: String,
     }),
@@ -123,7 +123,7 @@ To show recursion, here is a lambda term evaluator.
 Informally, here is the type of lambda terms:
 
 ```
-var Term = OR({
+type Term = OR({
     identifier: String,
     lambda: AND({
         arg: String,
