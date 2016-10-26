@@ -1,6 +1,6 @@
 # Case Split
 
-Tagged sum and product types form a lovely algebra together, and have
+Algebraic data types, here tagged sum and product types, can have very
 simple representations as Javascript objects.
 
 Plain old Javascript objects can usually be seen as tagged products.
@@ -56,8 +56,6 @@ type Post = OR({
 ```
 
 Here is some sample data that we might want to display on this blog.
-Notice that each post is an object whose one key indicates the post's
-type:
 
 ```
 var textPost1 = {
