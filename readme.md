@@ -1,6 +1,6 @@
 # Case Split
 
-Algebraic data types, here tagged sum and product types, can have very
+Algebraic data types, e.g. tagged sum and product types, can have very
 simple representations as Javascript objects.
 
 Plain old Javascript objects can usually be seen as tagged products.
