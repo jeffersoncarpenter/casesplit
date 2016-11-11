@@ -15,14 +15,38 @@ chosen from a given set.  Case splitting (not property access) is how
 sum types are used.  To case split on an object, you provide one
 function for each possible key.
 
+## casesplit
+
+The code for the `casesplit` function loops through the keys of the
+sum type - of which there should be one.  It indexes into the set of
+cases using that key and applies the function to the object value.
+
+```
+var casesplit = function (cases) {
+	return function (obj) {
+		for (var key in obj) {
+			if (cases.hasOwnProperty(key) && obj.hasOwnProperty(key)) {
+				if (!isFunction(cases[key])) {
+					return cases[key];
+				}
+				return cases[key](obj[key]);
+			}
+		}
+		throw 'no case for ' + JSON.stringify(obj);
+	};
+};
+```
+
 ## Install
+
+In case you don't want to copy and paste the above function, you can
+install `casesplit` using npm or bower.
 
 `npm install casesplit`
 
 `bower install casesplit`
 
 Source code is at https://github.com/jeffersoncarpenter/casesplit.
-Post comments and bugs there.
 
 ## Example - Blog Posts
 
