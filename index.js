@@ -3,24 +3,24 @@ var isFunction = function(obj) {
 };
 
 var doCaseSplit = function (cases, obj) {
-	for (var key in obj) {
-		if (cases.hasOwnProperty(key) && obj.hasOwnProperty(key)) {
-			if (!isFunction(cases[key])) {
-				return cases[key];
-			}
-			return cases[key](obj[key]);
-		}
-	}
-	throw 'no case for ' + JSON.stringify(obj);
+  if (!obj) {
+    debugger;
+  }
+  for (var key in obj) {
+	if (cases.hasOwnProperty(key) && obj.hasOwnProperty(key)) {
+      return cases[key](obj[key]);
+    }
+  }
+  throw 'no case for ' + JSON.stringify(obj);
 };
 
 module.exports = function (cases, obj) {
-	if (!obj) {
-		// curried (recommended)
-		return function (obj) {
-			return doCaseSplit(cases, obj);
-		};
-	}
-	// not curried
-	return doCaseSplit(cases, obj);
+  if (!obj) {
+    // curried (recommended)
+    return function (obj) {
+      return doCaseSplit(cases, obj);
+    };
+  }
+  // not curried
+  return doCaseSplit(cases, obj);
 };

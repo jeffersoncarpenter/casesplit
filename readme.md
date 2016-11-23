@@ -1,17 +1,17 @@
 # Case Split
 
-Algebraic data types, e.g. tagged sum and product types, can have very
+Algebraic data types, e.g. tagged sum and product types, have very
 simple representations as Javascript objects.
 
-Plain old Javascript objects can usually be seen as tagged products.
-Specific keys must be present on an object, and their values must be
-of certain types.  Property access is how values of product types are
-used.  Given most objects, you access any of its properties to obtain
-a corresponding value.
+Plain old Javascript objects are often tagged products.  Specific keys
+must be present on an object, and their values must be of certain
+types.  Property access is how values of product types are used.
+Given most objects, you access any of its properties to obtain a
+corresponding value.
 
-Tagged sum types can also be represented easily using Javascript
+Tagged sums are also easily represented easily using Javascript
 objects.  These are single-property objects, where the one property is
-chosen from a given set.  Case splitting (not property access) is how
+chosen from a given set.  Case splitting, not property access, is how
 sum types are used.  To case split on an object, you provide one
 function for each possible key.
 
